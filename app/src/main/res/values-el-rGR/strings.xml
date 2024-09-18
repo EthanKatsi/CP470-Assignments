@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Εργασία 1</string>
+    <string name="hello_message">Γεια σου Κόσμο!</string>
+    <string name="ButtonText">Είμαι ένα κουμπί</string>
+</resources>

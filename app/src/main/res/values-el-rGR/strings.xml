@@ -3,4 +3,13 @@
     <string name="app_name">Εργασία 1</string>
     <string name="hello_message">Γεια σου Κόσμο!</string>
     <string name="ButtonText">Είμαι ένα κουμπί</string>
+
+    <string name="Login">Σύνδεση</string>
+    <string name="LoginName">Σύνδεση Ονομα</string>
+    <string name="password">σύνθημα</string>
+    <string name="Name">όνομα</string>
+
+    <string name="WhatDoesThisDo">Τι κάνει αυτό;</string>
+    <string name="RadioButton">ΡαδιόφωνοΚουμπί</string>
+    <string name="CheckBox">ΕλεγχοςΚουτί</string>
 </resources>

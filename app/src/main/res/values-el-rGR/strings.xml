@@ -12,4 +12,6 @@
     <string name="WhatDoesThisDo">Τι κάνει αυτό;</string>
     <string name="RadioButton">ΡαδιόφωνοΚουμπί</string>
     <string name="CheckBox">ΕλεγχοςΚουτί</string>
+
+    <string name="loginButton">Σύνδεση</string>
 </resources>

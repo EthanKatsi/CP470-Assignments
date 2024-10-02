@@ -11,4 +11,6 @@
     <string name="WhatDoesThisDo">What does this do?</string>
     <string name="RadioButton">RadioButton</string>
     <string name="CheckBox">CheckBox</string>
+
+    <string name="loginButton">Login</string>
 </resources>

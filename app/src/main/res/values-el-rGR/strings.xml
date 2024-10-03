@@ -14,4 +14,8 @@
     <string name="CheckBox">ΕλεγχοςΚουτί</string>
 
     <string name="loginButton">Σύνδεση</string>
+    <string name="dialog_message">Θέλετε να ολοκληρώσετε τη δραστηριότητα;</string>
+    <string name="dialog_title">Διάλογος πλαισίου ελέγχου</string>
+    <string name="ok">Εντάξει</string>
+    <string name="cancel">Ματαίωση</string>
 </resources>

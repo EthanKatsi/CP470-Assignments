@@ -13,4 +13,8 @@
     <string name="CheckBox">CheckBox</string>
 
     <string name="loginButton">Login</string>
+    <string name="dialog_message">Do you want to finish the activity?</string>
+    <string name="dialog_title">Check Box Dialog</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>

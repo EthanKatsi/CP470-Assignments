@@ -1,7 +1,11 @@
 package com.example.androidassignments;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,11 +15,23 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declaring variables
+    private Button mainButton;
+    String ACTIVIY_NAME = "Main Activity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        // Stores reference to button
+        mainButton = findViewById(R.id.button);
+
+        mainButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ListItemsActivity.class);
+            startActivityForResult(intent, 10);
+        });
 
         Log.i("MainActivity", "onCreate");
 
@@ -25,6 +41,22 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int responseCode, Intent data) {
+        super.onActivityResult(requestCode, responseCode, data);
+        if (requestCode == 10) {
+            Log.i(ACTIVIY_NAME, "Returned to MainActivity.onActivityResult");
+            if (responseCode == Activity.RESULT_OK && data != null) {
+                String messagePassed = data.getStringExtra("Response");
+                if (messagePassed != null) {
+                    Toast toast = Toast.makeText(this, "ListItemsActivity passed: " + messagePassed, Toast.LENGTH_LONG);
+                    toast.show();
+                }
+            }
+        }
+    }
+
     protected void onResume() {
         super.onResume();
         Log.i("MainActivity", "onResume");

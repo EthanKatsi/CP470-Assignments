@@ -5,6 +5,7 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -17,10 +18,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".LoginActivity" />
+
+        <activity
+            android:name=".ChatWindow"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+
         <activity
             android:name=".ListItemsActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
 
         <activity
             android:name=".LoginActivity"
@@ -36,5 +47,4 @@
             android:exported="false">
         </activity>
     </application>
-
 </manifest>

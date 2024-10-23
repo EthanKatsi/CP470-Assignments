@@ -23,15 +23,29 @@
         android:layout_width="160dp"
         android:layout_height="58dp"
         android:text="@string/ButtonText"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="89dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_margin="16dp"
+        style="@style/customButtonStyle" />
 
     <Button
         android:id="@+id/startChat"
         android:layout_width="160dp"
         android:layout_height="64dp"
         android:text="@string/startChat"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="83dp" />
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_margin="16dp"
+        style="@style/customButtonStyle" />
+
+    <Button
+        android:id="@+id/testToolbar"
+        android:layout_width="324dp"
+        android:layout_height="68dp"
+        android:text="@string/testToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_margin="16dp"
+        style="@style/customButtonStyle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

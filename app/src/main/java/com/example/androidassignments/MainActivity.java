@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mainButton;
     String ACTIVITY_NAME = "Main Activity";
     private Button startChat;
+    private Button startToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
             Intent intent2 = new Intent(MainActivity.this, ChatWindow.class);
             startActivityForResult(intent2, 10);
         });
+
+        // When you click Test Toolbar it opens the toolbar
+        startToolbar = findViewById(R.id.testToolbar);
+        startToolbar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+            startActivityForResult(intent, 10);
+        });
+
+
 
         Log.i("MainActivity", "onCreate");
 
@@ -65,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 
     protected void onResume() {
         super.onResume();

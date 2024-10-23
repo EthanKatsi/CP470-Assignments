@@ -15,7 +15,7 @@
       </SelectionState>
       <SelectionState runConfigName="MainActivity">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-09-25T23:02:52.476904200Z">
+        <DropdownSelection timestamp="2024-10-21T23:39:40.646354300Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\katsi\.android\avd\Pixel_8a_API_TiramisuPrivacySandbox.avd" />
@@ -26,7 +26,7 @@
       </SelectionState>
       <SelectionState runConfigName="LoginActivity">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-10-02T23:52:44.995799600Z">
+        <DropdownSelection timestamp="2024-10-21T23:28:32.617781200Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\katsi\.android\avd\Pixel_8a_API_TiramisuPrivacySandbox.avd" />

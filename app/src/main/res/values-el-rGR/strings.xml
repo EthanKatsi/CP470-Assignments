@@ -21,4 +21,18 @@
 
     <string name="startChat">Ξεκινήστε τη συνομιλία</string>
     <string name="send">Στέλνω</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Πρώτο Θραύσμα</string>
+    <string name="second_fragment_label">Δεύτερος Θραύσμα</string>
+    <string name="next">Επόμενος</string>
+    <string name="previous">Προηγούμενος</string>
+    <string name="pick_color">Θέλετε να επιστρέψετε;</string>
+
+    <string name="action_one">Ενας</string>
+    <string name="action_two">Δυο</string>
+    <string name="action_three">Τρία</string>
+    <string name="testToolbar">Γραμμή εργαλείων δοκιμής</string>
+    <string name="about">για</string>
+    <string name="newMessage">Νέο Μήνυμα</string>
 </resources>

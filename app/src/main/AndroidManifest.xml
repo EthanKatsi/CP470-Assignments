@@ -21,20 +21,26 @@
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".LoginActivity" />
+            android:value=".MainActivity" />
+
+        <activity
+            android:name=".TestToolbar"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidAssignments"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".ChatWindow"
             android:exported="false"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".ListItemsActivity"
             android:exported="false"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".MainActivity" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +49,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="false">
         </activity>
     </application>

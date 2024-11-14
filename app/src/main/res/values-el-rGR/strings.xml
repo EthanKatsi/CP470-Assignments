@@ -35,4 +35,6 @@
     <string name="testToolbar">Γραμμή εργαλείων δοκιμής</string>
     <string name="about">για</string>
     <string name="newMessage">Νέο Μήνυμα</string>
+
+    <string name="weather_forecast">Πρόγνωση καιρού</string>
 </resources>

@@ -45,7 +45,17 @@
         android:text="@string/testToolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-
         style="@style/customButtonStyle" />
+
+    <Button
+        android:id="@+id/weatherForecast"
+        style="@style/customButtonStyle"
+        android:layout_width="201dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/weather_forecast"
+        app:layout_constraintTop_toBottomOf="@+id/testToolbar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

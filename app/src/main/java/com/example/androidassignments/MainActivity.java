@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     String ACTIVITY_NAME = "Main Activity";
     private Button startChat;
     private Button startToolbar;
+    private Button weatherForecast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
         startToolbar = findViewById(R.id.testToolbar);
         startToolbar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+            startActivityForResult(intent, 10);
+        });
+
+        // When you click WeatherForecast button it opens the weather forecast page
+        weatherForecast = findViewById(R.id.weatherForecast);
+        weatherForecast.setOnClickListener(v -> {
+           Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
             startActivityForResult(intent, 10);
         });
 

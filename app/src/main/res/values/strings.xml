@@ -34,4 +34,6 @@
     <string name="testToolbar">Test Toolbar</string>
     <string name="about">About</string>
     <string name="newMessage">New Message</string>
+
+    <string name="weather_forecast">WeatherForecast</string>
 </resources>

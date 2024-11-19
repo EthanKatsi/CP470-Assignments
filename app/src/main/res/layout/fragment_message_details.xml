@@ -14,7 +14,7 @@
         android:textSize="18sp"
         android:paddingBottom="8dp"
         android:gravity="right"/>
-A
+
     <TextView
         android:id="@+id/idTextView"
         android:layout_width="match_parent"

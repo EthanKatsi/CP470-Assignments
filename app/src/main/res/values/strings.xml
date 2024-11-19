@@ -36,4 +36,8 @@
     <string name="newMessage">New Message</string>
 
     <string name="weather_forecast">WeatherForecast</string>
+
+    <string name="delete_message">Delete this message</string>
+    <string name="message_here">Message Here</string>
+    <string name="id_here">ID Here</string>
 </resources>

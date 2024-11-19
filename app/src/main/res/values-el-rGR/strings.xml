@@ -37,4 +37,8 @@
     <string name="newMessage">Νέο Μήνυμα</string>
 
     <string name="weather_forecast">Πρόγνωση καιρού</string>
+
+    <string name="delete_message">Διαγράψτε αυτό το μήνυμα</string>
+    <string name="message_here">Μήνυμα εδώ</string>
+    <string name="id_here">ID Εδώ</string>
 </resources>

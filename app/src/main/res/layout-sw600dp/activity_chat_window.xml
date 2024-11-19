@@ -9,29 +9,30 @@
     tools:context=".ChatWindow">
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ListView
             android:id="@+id/myListView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_alignParentTop="true"
+            android:layout_width="503dp"
+            android:layout_height="1628dp"
             android:layout_above="@+id/send_layout"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="11dp"
             android:fitsSystemWindows="true" />
 
         <LinearLayout
             android:id="@+id/send_layout"
-            android:layout_width="match_parent"
+            android:layout_width="503dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal"
-            android:padding="8dp">
+            android:padding="8dp"
+            android:fitsSystemWindows="true">
 
             <EditText
                 android:id="@+id/editTextMessage"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:inputType="text" />
@@ -40,7 +41,16 @@
                 android:id="@+id/send"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/send" />
+                android:text="@string/send"
+                android:layout_toRightOf="@+id/myListView" />
         </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/tablet_frame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/myListView"
+            android:layout_alignParentRight="true" />
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
